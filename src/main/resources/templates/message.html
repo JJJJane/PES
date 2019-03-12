@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Dashboard Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/ie10-viewport-bug-workaround.css}">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/dashboard.css}">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]>
+    <![endif]-->
+    <script src="css/ie-emulation-modes-warning.js"></script>
+    <script th:src="@{/css/ie8-responsive-file-warning.js}"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">***公司绩效考核系统</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">退出系统</a></li>
+            <li><a href="#">设置</a></li>
+            <li><a href="#">个人资料</a></li>
+            <li><a href="#">帮助</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="搜索...">
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li><a href="./index.html">考核汇总 <span class="sr-only">(current)</span></a></li>
+            <li><a href="./personal.html">个人成绩</a></li>
+            <li><a href="./center.html">考核中心</a></li>
+            <li class="active"><a href="./message.html">留言板</a></li>
+          </ul>
+        </div>
+        <form role="form" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <div class="form-group">
+            <h2>讨论区</h2>
+            <textarea class="form-control" rows="4"></textarea>
+            <div class="col-sm-offset-11">
+              <button type="submit" class="btn btn-primary btn-block">发送</button>
+            </div>
+          </div>
+          <div class="blog-post">
+            <div style="height:100px; background-color: #eee">
+              <h3 class="text-info">王壹</h3>
+            <p>陈肆太厉害啦</p>
+            <ul>
+              <li><span class="text-info">李何</span>&nbsp;&nbsp;我也这样认为！</li>
+            </ul>
+          </div>
+          </div>
+
+          <div class="form-group">
+            <h2>反馈栏</h2>
+            <textarea class="form-control" rows="4"></textarea>
+            <div class="col-sm-offset-11">
+              <button type="submit" class="btn btn-primary btn-block">发送</button>
+            </div>
+          </div>
+          <div class="blog-post" style="height:100px; background-color: #eee">
+            <p>为什么我上个月上班一次都没迟到，考勤还扣分了？</p>
+            <ul>
+              <li><span class="text-info">管理员1</span>&nbsp;&nbsp;你好，记录上显示您上个月14日部门开会无故缺勤，故扣分。</li>
+            </ul>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script th:src="@{assets/css/vendor/jquery.min.js}"><\/script>')</script>
+    <script th:src="@{/css/bootstrap.min.js}"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script th:src="@{/css/holder.min.js}"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script th:src="@{/css/ie10-viewport-bug-workaround.js}"></script>
+  </body>
+</html>
